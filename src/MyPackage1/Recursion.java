@@ -385,6 +385,7 @@ import java.util.HashSet;
 //
 //}
 
+<<<<<<< HEAD
 
 public class Recursion {
     public static void printPermutation(String str, String permutation ){
@@ -411,6 +412,59 @@ public class Recursion {
     }
 
 
+=======
+//// 16. Find the permutation of String *
+//public class Recursion {
+//    public static void printPermutation(String str, String permutation ){
+//        if(str.length() == 0){
+//            System.out.println(permutation);
+//            return;
+//        }
+//        for( int i=0; i<str.length(); i++) {
+//            // find first char of level 1
+//            char currChar = str.charAt(i);
+//            // if we choose a then make bc / cb
+//            String newStr = str.substring( 0 , i) + str.substring(i+1);
+//            printPermutation(newStr, permutation+currChar);
+//
+//
+//        }
+//
+//    }
+//
+//    public static void main(String args[]) {
+//        String str ="abcd";
+//        printPermutation(str ,"");
+//
+//    }
+//}
+
+
+// 17 . Count total path in a maze to move from (0, 0) to (n,m)
+public class Recursion {
+    public static int countPaths( int i , int j , int n , int m ){
+        if(i==n || j==n){
+            return 0; // no path
+
+        }
+        if(i==n-1 && j==m-1){
+            return 1; //stop
+        }
+
+           int downPath = countPaths( i+1 , j ,n ,m); // move downward
+           int rightPath = countPaths(i, j+1, n,m);   // move right
+           return downPath + rightPath;
+
+
+    }
+    public static void main(String args[]){
+        int n= 3, m=3;
+        int totalPath= countPaths(0,0,n,m);
+        System.out.println(totalPath);
+
+    }
+
+>>>>>>> 2e7a13d (practice)
 }
 
 
@@ -420,4 +474,7 @@ public class Recursion {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e7a13d (practice)

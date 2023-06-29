@@ -208,6 +208,7 @@ public class Pattern {
                 System.out.println();  // new line
 
         }
+<<<<<<< HEAD
 
 
 
@@ -215,6 +216,43 @@ public class Pattern {
 
 
 
+=======
+// printing AAA
+//        class Main {
+//            public static void main(String[] args) {
+//                char  ch ='A';
+//                for( int i=1; i<=5; i++){
+//                    for( int j=1; j<=i; j++) {
+//                        System.out.print (ch + " ");
+//
+//                    }
+//                    System.out.println();
+//                }
+//
+//
+//            }
+//        }
+
+
+//       a
+//      bb
+//      ccc
+//         class Main {
+//   public static void main(String[] args) {
+//     char  ch ='A';
+//     for( int i=1; i<=5; i++){
+//          for( int j=1; j<=i; j++) {
+//            System.out.print (ch + " ");
+//
+//          }
+//           System.out.println();
+//       ch++;
+//     }
+//
+//
+//   }
+// }
+>>>>>>> 2e7a13d (practice)
 
 
 

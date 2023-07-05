@@ -208,7 +208,6 @@ public class Pattern {
                 System.out.println();  // new line
 
         }
-<<<<<<< HEAD
 
 
 
@@ -216,7 +215,8 @@ public class Pattern {
 
 
 
-=======
+
+
 // printing AAA
 //        class Main {
 //            public static void main(String[] args) {
@@ -252,7 +252,7 @@ public class Pattern {
 //
 //   }
 // }
->>>>>>> 2e7a13d (practice)
+
 
 
 

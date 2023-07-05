@@ -259,6 +259,78 @@ package MyPackage1;
 //}
 
 // Q 10
-public class prac1 {
+//public class prac1 {
+//    public static void main(String [] args) {
+//       String str= "abbccc";
+//        int count;
+//        // converting str = array
+//        char[] ch = str.toCharArray();
+//        for(int i=0; i<ch.length; i++) {
+//            count=1;
+//             for( int j=i+1; j<ch.length; j++) {
+//                 if(ch[i]==ch[j] && ch[i]!=' ') {
+//                     count++;
+//                     //Set ch[j] to 0 to avoid printing visited character
+//                     ch[j] = '0';
+//                 }
+//             }
+//            //A character is considered as duplicate if count is greater than 1
+//            if(count > 1 && ch[i] != '0') {
+//                System.out.println(ch[i]);
+//                System.out.println(count);
+//            }
+//        }
+//
+//    }
+//
+//}
 
+
+
+
+//public class prac1 {
+//    public static void main(String args[]) {
+//        String str = "shikhe    ";
+//        System.out.println(str.replace( 'e', 'i'));
+//
+//
+//    }
+//
+//}
+
+// Q 11.
+//public class prac1 {
+//    public static void main(String[] args) {
+//        String myName = "shikha";
+//        StringBuilder name = new StringBuilder();
+//
+//        for (int i = 0; i < myName.length(); i++) {
+//            char ch = myName.charAt(i);
+//            int index =myName.indexOf(ch , i+1);
+//            // -1 means char not found
+//            if(index ==-1) {
+//                name.append(ch);
+//            }
+//        }
+//        System.out.println(name);
+//    }
+//}
+
+
+
+public class prac1 {
+    public static void main(String[] args) {
+        String myName = "shikha";
+        StringBuilder name = new StringBuilder();
+
+        for (int i = 0; i < myName.length(); i++) {
+            char ch = myName.charAt(i);
+            int index =myName.indexOf(ch , i+1);
+            // -1 means char not found
+            if(index ==-1) {
+                name.append(ch);
+            }
+        }
+        System.out.println(name);
+    }
 }

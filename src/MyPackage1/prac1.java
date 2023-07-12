@@ -57,34 +57,41 @@ package MyPackage1;
 //}
 
 
-// Q.3
-//public class prac1 {
-//    public static void rotate (int [] numbers ,int k){
-//
-//        reverse( numbers,0,numbers.length-1);
-//        reverse( numbers,0,k-1);
-//        reverse( numbers,k,numbers.length-1);
-//
-//    }
-//
-//        public static void reverse(int[] numbers, int start, int end) {
-//            while ( start<end){
-//                int temp = numbers[start];
-//                numbers[start]=numbers[end];
-//                numbers[end] = temp;
-//                start++;
-//                end++;
-//
-//            }
-//        }
-//    public static void main( String args[]) {
-//        int numbers [] ={ 1,2,3,4,5,6,7,8} ;
-//        int k=3;
-//        reverse( numbers,0, args.length);
-//        rotate(numbers,3);
-//    }
-//    }
-//
+ //Q.3
+public class prac1 {
+
+
+     // Function to Reverse the array
+     public static void reverse(int[] numbers, int start, int end) {
+         while ( start<=end){
+             int temp = numbers[start];
+             numbers[start]=numbers[end];
+             numbers[end] = temp;
+             start++;
+             end--;
+
+         }
+     }
+     // Function to Rotate k elements to right
+    public static void rotate (int [] numbers ,int n ,int k){
+
+        reverse( numbers,0,numbers.length-1); // reversing whole array
+        reverse( numbers,0,k-1);            // 0 to k-1 reverse
+        reverse( numbers,k,numbers.length-1);   //k to length-1 reverse
+
+    }
+    public static void main( String args[]) {
+        int numbers [] ={ 1,2,3,4,5,6,7,8} ;
+        int k=3;
+        int n= numbers.length;
+        rotate(numbers,n,k);
+        for(int i=0; i<n;i++) {
+              System.out.print(numbers[i] + " ")  ;
+
+        }
+    }
+    }
+
 
 //4
 //public class prac1 {
@@ -318,19 +325,19 @@ package MyPackage1;
 
 
 
-public class prac1 {
-    public static void main(String[] args) {
-        String myName = "shikha";
-        StringBuilder name = new StringBuilder();
-
-        for (int i = 0; i < myName.length(); i++) {
-            char ch = myName.charAt(i);
-            int index =myName.indexOf(ch , i+1);
-            // -1 means char not found
-            if(index ==-1) {
-                name.append(ch);
-            }
-        }
-        System.out.println(name);
-    }
-}
+//public class prac1 {
+//    public static void main(String[] args) {
+//        String myName = "shikha";
+//        StringBuilder name = new StringBuilder();
+//
+//        for (int i = 0; i < myName.length(); i++) {
+//            char ch = myName.charAt(i);
+//            int index =myName.indexOf(ch , i+1);
+//            // -1 means char not found
+//            if(index ==-1) {
+//                name.append(ch);
+//            }
+//        }
+//        System.out.println(name);
+//    }
+//}

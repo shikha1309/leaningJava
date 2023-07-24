@@ -250,7 +250,8 @@ package MyPackage1;
 //}
 
 
-// Q 10. Check it is strictly sorted or Not
+// Q 10. move all x
+
 //public class Recursion {
 //    public static void moveAllX(String str, int idx, int count, String newString) {
 //        //  base condition
